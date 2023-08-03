@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 *,
 *:before,
 *:after {
@@ -281,7 +282,7 @@ main #our__reputation .cards__container .card p {
     flex-direction: column;
     gap: 20px;
   }
-  main #projects .content__wrapper nav a {
+  main #projects .content__wrapper nav li a {
     text-decoration: none;
     font-weight: 500;
     font-size: 24px;
@@ -335,5 +336,95 @@ main #our__reputation .cards__container .card p {
   }
   main #projects .content__wrapper .cards__buttons .buttons__container .next {
     display: flex;
+  }
+}
+main #section__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 29px;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+main #section__form h2,
+main #section__form p {
+  text-align: center;
+  padding: 0px 20px;
+}
+main #section__form .title__description {
+  font-size: 20px;
+  font-weight: 400;
+}
+main #section__form form,
+main #section__form fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+main #section__form form input,
+main #section__form form textarea,
+main #section__form form select,
+main #section__form form option,
+main #section__form form button,
+main #section__form fieldset input,
+main #section__form fieldset textarea,
+main #section__form fieldset select,
+main #section__form fieldset option,
+main #section__form fieldset button {
+  font-family: "Work sans", sans-serif;
+  font-size: 18px;
+  line-height: 21.11px;
+  border: 1px solid #e0e3eb;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #fff;
+}
+main #section__form form textarea,
+main #section__form fieldset textarea {
+  height: 135px;
+}
+main #section__form form .input__file,
+main #section__form fieldset .input__file {
+  padding: 0px;
+}
+main #section__form form .input__file::file-selector-button,
+main #section__form fieldset .input__file::file-selector-button {
+  border: none;
+  background: #2947a9;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+}
+main #section__form form button,
+main #section__form fieldset button {
+  background-color: #2947a9;
+  color: white;
+  font-weight: 600;
+  padding: 15px;
+  align-self: center;
+  max-width: 271px;
+  width: 100%;
+  cursor: pointer;
+}
+main #section__form form p,
+main #section__form fieldset p {
+  align-self: flex-start;
+  color: #667299;
+}
+main #section__form form p span,
+main #section__form fieldset p span {
+  color: red;
+}
+
+@media screen and (min-width: 768px) {
+  main #section__form {
+    max-width: 770px;
+  }
+  main #section__form form fieldset {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }/*# sourceMappingURL=styles.css.map */
