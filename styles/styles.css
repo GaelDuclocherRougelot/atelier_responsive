@@ -262,14 +262,15 @@ main #our__reputation .cards__container .card p {
   main #projects {
     display: flex;
     align-items: flex-start;
+    max-width: 1120px;
   }
   main #projects #main__title {
     display: none;
   }
   main #projects .content__wrapper {
     display: flex;
-    justify-content: center;
-    gap: 260px;
+    justify-content: space-between;
+    gap: 40px;
   }
   main #projects .content__wrapper nav {
     display: block;
