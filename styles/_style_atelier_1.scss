@@ -44,6 +44,7 @@ main {
         border: 1px solid #e0e3eb;
         border-radius: 4px;
         padding-bottom: 40px;
+        width: 100%;
 
         img {
           width: 32px;
@@ -66,7 +67,7 @@ main {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 768px) {
   main {
     #our__reputation {
       .cards__container {

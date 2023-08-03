@@ -149,6 +149,7 @@ main #our__reputation .cards__container .card {
   border: 1px solid #e0e3eb;
   border-radius: 4px;
   padding-bottom: 40px;
+  width: 100%;
 }
 main #our__reputation .cards__container .card img {
   width: 32px;
@@ -167,7 +168,7 @@ main #our__reputation .cards__container .card p {
   line-height: 18.77px;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 768px) {
   main #our__reputation .cards__container {
     flex-direction: row;
     justify-content: center;
@@ -193,48 +194,52 @@ main #our__reputation .cards__container .card p {
 #projects .content__wrapper nav {
   display: none;
 }
-#projects .content__wrapper .cards__container {
+#projects .content__wrapper .cards__buttons .cards__container {
   display: flex;
   flex-direction: column;
   gap: 30px;
   align-items: center;
 }
-#projects .content__wrapper .cards__container .card {
-  min-width: 332px;
-  max-width: 356px;
+#projects .content__wrapper .cards__buttons .cards__container .card {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-#projects .content__wrapper .cards__container .card img {
+#projects .content__wrapper .cards__buttons .cards__container .card img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#projects .content__wrapper .cards__container .card .card__description {
+#projects .content__wrapper .cards__buttons .cards__container .card .card__description {
   padding: 12px;
   background-color: #2947a9;
   color: white;
 }
-#projects .content__wrapper .cards__container .card .card__description h3 {
+#projects .content__wrapper .cards__buttons .cards__container .card .card__description h3 {
   font-weight: 700;
   font-size: 20px;
   line-height: 23.46px;
 }
-#projects .content__wrapper .cards__container .card .card__description p {
+#projects .content__wrapper .cards__buttons .cards__container .card .card__description p {
   margin-top: 12px;
   margin-bottom: 4px;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.11px;
 }
-#projects .content__wrapper .cards__container .buttons__container {
+#projects .content__wrapper .cards__buttons .buttons__container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: 30px;
 }
-#projects .content__wrapper .cards__container .buttons__container button {
+#projects .content__wrapper .cards__buttons .buttons__container .carrousel__circles,
+#projects .content__wrapper .cards__buttons .buttons__container .next,
+#projects .content__wrapper .cards__buttons .buttons__container .back {
+  display: none;
+}
+#projects .content__wrapper .cards__buttons .buttons__container button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -250,22 +255,24 @@ main #our__reputation .cards__container .card p {
   cursor: pointer;
 }
 
-@media screen and (min-width: 1280px) {
-  main {
-    padding-left: 300px;
-    padding-right: 300px;
-  }
+@media screen and (min-width: 768px) {
   main #projects {
     display: flex;
     align-items: flex-start;
   }
+  main #projects #main__title {
+    display: none;
+  }
   main #projects .content__wrapper {
     display: flex;
-    justify-content: space-between;
-    gap: 100px;
+    justify-content: center;
+    gap: 230px;
   }
   main #projects .content__wrapper nav {
     display: block;
+  }
+  main #projects .content__wrapper nav h2 {
+    margin-bottom: 20px;
   }
   main #projects .content__wrapper nav ul {
     display: flex;
@@ -279,13 +286,46 @@ main #our__reputation .cards__container .card p {
     line-height: 28.15px;
     color: #c2c7d6;
   }
-  main #projects .content__wrapper .cards__container {
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 780px;
+  main #projects .content__wrapper .cards__buttons .cards__container {
+    padding-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
   }
-  main #projects .content__wrapper .cards__container .card img {
-    height: 247px;
+  main #projects .content__wrapper .cards__buttons .cards__container .card {
+    height: 100%;
+  }
+  main #projects .content__wrapper .cards__buttons .buttons__container {
+    margin-top: 30px;
+    justify-content: space-between;
+    gap: 18px;
+  }
+  main #projects .content__wrapper .cards__buttons .buttons__container .carrousel__circles {
+    display: flex;
+    gap: 9px;
+  }
+  main #projects .content__wrapper .cards__buttons .buttons__container .carrousel__circles .circle {
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    background-color: #f6f8f7;
+  }
+  main #projects .content__wrapper .cards__buttons .buttons__container .carrousel__circles .circle:nth-child(1) {
+    background-color: #2947a9;
+  }
+  main #projects .content__wrapper .cards__buttons .buttons__container button {
+    width: 100%;
+  }
+  main #projects .content__wrapper .cards__buttons .buttons__container .see__more {
+    display: none;
+  }
+  main #projects .content__wrapper .cards__buttons .buttons__container .back {
+    display: block;
+  }
+  main #projects .content__wrapper .cards__buttons .buttons__container .back img {
+    transform: rotate(-180deg);
+  }
+  main #projects .content__wrapper .cards__buttons .buttons__container .next {
+    display: block;
   }
 }/*# sourceMappingURL=styles.css.map */
