@@ -10,8 +10,11 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
   padding: 29px 29px 0px 29px;
+
+  a {
+    font-family: $global-font;
+  }
 
   h2 {
     color: $title-color;
@@ -34,7 +37,6 @@ main {
       width: 100%;
 
       .card {
-        width: 332px;
         padding: 20px;
         display: flex;
         flex-direction: column;
@@ -64,13 +66,14 @@ main {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1280px) {
   main {
     #our__reputation {
       .cards__container {
         flex-direction: row;
         justify-content: center;
         gap: 60px;
+
         .card {
           width: 336px;
           height: 227px;
