@@ -85,6 +85,33 @@
   }
 }
 // media queries
+@media screen and (min-width: 540px) {
+  main {
+    #projects {
+      .content__wrapper {
+        .cards__buttons {
+          .cards__container {
+            padding-top: 70px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+
+            .card {
+              height: 100%;
+              .card__description {
+                height: 100%;
+
+                p {
+                  margin-bottom: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media screen and (min-width: 768px) {
   main {
     #projects {
