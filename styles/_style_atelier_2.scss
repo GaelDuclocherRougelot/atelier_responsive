@@ -34,7 +34,10 @@
             padding: 12px;
             background-color: #2947a9;
             color: white;
-
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 20px;
             h3 {
               font-weight: 700;
               font-size: 20px;
@@ -42,8 +45,6 @@
             }
 
             p {
-              margin-top: 12px;
-              margin-bottom: 4px;
               font-size: 18px;
               font-weight: 400;
               line-height: 21.11px;
@@ -97,7 +98,7 @@
       .content__wrapper {
         display: flex;
         justify-content: center;
-        gap: 230px;
+        gap: 260px;
 
         nav {
           display: block;
@@ -127,6 +128,13 @@
 
             .card {
               height: 100%;
+              .card__description {
+                height: 100%;
+
+                p {
+                  margin-bottom: 10px;
+                }
+              }
             }
           }
 
@@ -159,14 +167,14 @@
             }
 
             .back {
-              display: block;
+              display: flex;
               img {
                 transform: rotate(-180deg);
               }
             }
 
             .next {
-              display: block;
+              display: flex;
             }
           }
         }
