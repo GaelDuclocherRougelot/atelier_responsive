@@ -10,12 +10,11 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 29px 29px 0px 29px;
-
+  
   a {
     font-family: $global-font;
   }
-
+  
   h2 {
     color: $title-color;
     font-weight: 700;
@@ -23,6 +22,7 @@ main {
     font-size: 36px;
   }
   #our__reputation {
+    padding: 100px 29px 0px 29px;
     display: flex;
     flex-direction: column;
     align-items: center;

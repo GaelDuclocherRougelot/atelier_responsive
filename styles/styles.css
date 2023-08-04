@@ -117,7 +117,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 29px 29px 0px 29px;
 }
 main a {
   font-family: "Work Sans", sans-serif;
@@ -129,6 +128,7 @@ main h2 {
   font-size: 36px;
 }
 main #our__reputation {
+  padding: 100px 29px 0px 29px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -188,6 +188,8 @@ main #our__reputation .cards__container .card p {
   width: 100%;
   padding-top: 100px;
   padding-bottom: 30px;
+  padding-left: 29px;
+  padding-right: 29px;
 }
 #projects .content__wrapper {
   width: 100%;
@@ -365,6 +367,8 @@ main #section__form {
   width: 100%;
   padding-top: 100px;
   padding-bottom: 30px;
+  padding-left: 29px;
+  padding-right: 29px;
 }
 main #section__form h2,
 main #section__form p {
@@ -444,5 +448,150 @@ main #section__form fieldset p span {
   main #section__form form fieldset {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+main #hero__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  width: 100%;
+}
+main #hero__section header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  height: 80px;
+  padding: 0px 29px;
+}
+main #hero__section header img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main #hero__section header #nav__desktop {
+  display: none;
+}
+main #hero__section header #hamburger__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 33px;
+  height: 21px;
+}
+main #hero__section header #hamburger__menu .line {
+  width: 100%;
+  height: 3px;
+  background-color: #667299;
+  border-radius: 3px;
+}
+main #hero__section #hero {
+  background-image: url(../assets/hero-mobile.png);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 470px;
+  display: flex;
+  align-items: center;
+  padding: 0px 29px;
+}
+main #hero__section #hero .feature__projects {
+  display: none;
+}
+main #hero__section #hero h1 {
+  font-family: "Work Sans";
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: 0em;
+  text-align: left;
+  max-width: 300px;
+  color: #292e3d;
+}
+
+@media screen and (min-width: 930px) {
+  main #hero__section header #hamburger__menu {
+    display: none;
+  }
+  main #hero__section header #nav__desktop {
+    display: flex;
+  }
+  main #hero__section header #nav__desktop ul {
+    display: flex;
+    gap: 50px;
+  }
+  main #hero__section header #nav__desktop ul li a {
+    text-decoration: none;
+    color: #14171F;
+  }
+  main #hero__section #hero {
+    gap: 160px;
+    background-image: url(../assets/hero-desktop.png);
+    background-repeat: no-repeat;
+    height: calc(100vh - 80px);
+    width: 100%;
+    justify-content: center;
+  }
+  main #hero__section #hero h1 {
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 84px;
+    letter-spacing: 0em;
+    max-width: 600px;
+  }
+  main #hero__section #hero .feature__projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    width: 416px;
+    background-color: #3559c7;
+    align-self: flex-end;
+    color: white;
+  }
+  main #hero__section #hero .feature__projects h3 {
+    margin-top: 20px;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  main #hero__section #hero .feature__projects p {
+    font-family: Work Sans;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  main #hero__section #hero .feature__projects .buttons {
+    background-color: #fff;
+    display: flex;
+    gap: 0.5px;
+    width: 100%;
+  }
+  main #hero__section #hero .feature__projects .buttons .back img {
+    transform: rotate(-180deg);
+  }
+  main #hero__section #hero .feature__projects .buttons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 334px;
+    height: 64px;
+    background-color: #292e3d;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.11px;
+    border: none;
+    cursor: pointer;
   }
 }/*# sourceMappingURL=styles.css.map */
