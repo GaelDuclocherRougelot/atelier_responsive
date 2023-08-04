@@ -524,6 +524,9 @@ main #hero__section #hero h1 {
     display: flex;
     gap: 50px;
   }
+  main #hero__section header #nav__desktop ul li #home__link {
+    color: #F9995D;
+  }
   main #hero__section header #nav__desktop ul li a {
     text-decoration: none;
     color: #14171F;
@@ -536,14 +539,22 @@ main #hero__section #hero h1 {
     width: 100%;
     justify-content: center;
   }
-  main #hero__section #hero h1 {
+  main #hero__section #hero .container {
+    max-width: 1120px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main #hero__section #hero .container h1 {
     font-size: 72px;
     font-weight: 600;
     line-height: 84px;
     letter-spacing: 0em;
     max-width: 600px;
   }
-  main #hero__section #hero .feature__projects {
+  main #hero__section #hero .container .feature__projects {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -553,7 +564,7 @@ main #hero__section #hero h1 {
     align-self: flex-end;
     color: white;
   }
-  main #hero__section #hero .feature__projects h3 {
+  main #hero__section #hero .container .feature__projects h3 {
     margin-top: 20px;
     font-family: Work Sans;
     font-size: 20px;
@@ -562,7 +573,7 @@ main #hero__section #hero h1 {
     letter-spacing: 0em;
     text-align: center;
   }
-  main #hero__section #hero .feature__projects p {
+  main #hero__section #hero .container .feature__projects p {
     font-family: Work Sans;
     font-size: 24px;
     font-weight: 400;
@@ -570,16 +581,16 @@ main #hero__section #hero h1 {
     letter-spacing: 0em;
     text-align: center;
   }
-  main #hero__section #hero .feature__projects .buttons {
+  main #hero__section #hero .container .feature__projects .buttons {
     background-color: #fff;
     display: flex;
     gap: 0.5px;
     width: 100%;
   }
-  main #hero__section #hero .feature__projects .buttons .back img {
+  main #hero__section #hero .container .feature__projects .buttons .back img {
     transform: rotate(-180deg);
   }
-  main #hero__section #hero .feature__projects .buttons button {
+  main #hero__section #hero .container .feature__projects .buttons button {
     display: flex;
     justify-content: center;
     align-items: center;
